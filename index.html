@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body onload="playGame()">
+    <div id="quiz">
+            <div class="quiz-content">
+            <div id="score" class="score">0</div>
+            <div class="question">
+                What is the answer for
+                <span id="field1" class="text-info">5</span> 
+                <span id="operator">+</span> 
+                <span id="field2" class="text-info">5</span> 
+            </div>
+            <div class="options">
+                <span id="option1" class="option" onclick="checkAnswer(this)">10</span>
+                <span id="option2" class="option" onclick="checkAnswer(this)">10</span>
+                <span id="option3" class="option" onclick="checkAnswer(this)">10</span>
+                <span id="option4" class="option" onclick="checkAnswer(this)">10</span>
+            </div>
+            <div class="play">
+                <a onclick="playAgain()" class="play-again">Play Again</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
